@@ -87,8 +87,7 @@
   .heading p,
   .coinRow p {
     margin: 0;
-    font-size: 2rem;
-    letter-spacing: 2px;
+    font-size: 1.6rem;
   }
 
   .cryptoImg img {
