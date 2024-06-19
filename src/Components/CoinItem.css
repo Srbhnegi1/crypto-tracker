@@ -10,8 +10,10 @@
 
 @media (max-width: 768px) {
   .coinRow {
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
   }
 
   .cryptoImg {
@@ -26,6 +28,8 @@
 
 @media (max-width: 480px) {
   .coinRow {
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0.5rem;
     padding: 5px;
   }
 
@@ -41,8 +45,8 @@
 }
 
 @media (max-width: 768px) {
-  /* .coinRow p:nth-child(4),
+  .coinRow p:nth-child(4),
   .coinRow p:nth-child(5) {
     display: none;
-  } */
+  }
 }

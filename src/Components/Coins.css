@@ -1,5 +1,6 @@
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -21,7 +22,6 @@
 .coinRow {
   padding: 1rem 0;
   margin: 2rem 0;
-
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
   transition: transform 0.3s ease-in-out;
@@ -48,9 +48,19 @@
 }
 
 @media (max-width: 768px) {
-  .heading p,
-  .coinRow p {
-    margin: 0 0.5rem;
+  .heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .heading p {
+    margin: 0;
+  }
+
+  .heading p:nth-child(4),
+  .heading p:nth-child(5) {
+    display: none;
   }
 
   .cryptoImg img {
@@ -61,7 +71,15 @@
 
 @media (max-width: 480px) {
   .heading {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
     font-size: 0.9rem;
+  }
+
+  .heading p:nth-child(4),
+  .heading p:nth-child(5),
+  .heading p:nth-child(6) {
+    display: none;
   }
 
   .heading p,
@@ -73,14 +91,5 @@
   .cryptoImg img {
     width: 20px;
     height: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .heading p:nth-child(4),
-  .heading p:nth-child(5) {
-    display: none;
-  }
-  .heading p {
-    font-size: 2rem;
   }
 }
