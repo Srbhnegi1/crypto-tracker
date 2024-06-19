@@ -1,0 +1,48 @@
+.coinRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coinRow p {
+  padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .coinRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cryptoImg {
+    margin-bottom: 10px;
+  }
+
+  .coinRow p {
+    text-align: left;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .coinRow {
+    padding: 5px;
+  }
+
+  .cryptoImg img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  .coinRow p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .coinRow p:nth-child(4),
+  .coinRow p:nth-child(5) {
+    display: none;
+  } */
+}
