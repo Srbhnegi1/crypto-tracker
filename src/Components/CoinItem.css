@@ -46,7 +46,8 @@
 
 @media (max-width: 768px) {
   .coinRow p:nth-child(4),
-  .coinRow p:nth-child(5) {
+  .coinRow p:nth-child(5),
+  .coinRow p:nth-child(6) {
     display: none;
   }
 }
