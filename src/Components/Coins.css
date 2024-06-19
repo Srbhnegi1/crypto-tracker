@@ -19,6 +19,34 @@
   letter-spacing: 1px;
 }
 
+.coinRow {
+  padding: 1rem 0;
+  margin: 2rem 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.coinRow:hover {
+  transform: scale(1.02);
+}
+
+.coinRow p {
+  flex: 1;
+  text-align: left;
+  margin: 0 1rem;
+}
+
+.cryptoImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cryptoImg img {
+  width: 30px;
+}
+
 @media (max-width: 768px) {
   .heading {
     display: grid;
@@ -28,8 +56,6 @@
 
   .heading p {
     margin: 0;
-    width: 2rem;
-    letter-spacing: 2px;
   }
 
   .heading p:nth-child(4),
@@ -56,8 +82,14 @@
     display: none;
   }
 
-  .heading p {
-    margin: 0;
-    font-size: 1.6rem;
+  .heading p,
+  .coinRow p {
+    margin: 0 0.25rem;
+    font-size: 0.8rem;
+  }
+
+  .cryptoImg img {
+    width: 20px;
+    height: 20px;
   }
 }
