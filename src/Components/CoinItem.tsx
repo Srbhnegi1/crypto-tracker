@@ -23,10 +23,10 @@ const CoinItem = ({ coin }: CoinItemProps) => {
         <img src={coin.image} alt="cryptoImage" />
         <p> {coin.symbol}</p>
       </div>
-      <p>${coin.current_price}</p>
+      <p>$ {coin.current_price}</p>
       <p>{coin.price_change_percentage_24h} %</p>
-      <p>${coin.total_volume}</p>
-      <p>${coin.market_cap}</p>
+      <p>$ {coin.total_volume}</p>
+      <p>$ {coin.market_cap}</p>
     </div>
   );
 };
